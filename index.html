@@ -1,2 +1,10 @@
 <h1><a href="pscan.txt">pscan</a></h1>
 <h1><a href="https://russianblogs.com/article/90211187199">Атаки на RSA</a></h1>
+
+
+git clone https://github.com/aircrack-ng/rtl8812au
+cd rtl8812au/
+git reset --hard 63cf0b4
+make dkms_install
+
+add '--force' in Makefile dkms_install if module already exist 
